@@ -1,6 +1,6 @@
 # CDS views for testing cyclic dependency
 
-Inspired by: [ABAP CDS - Cyclical Dependencies](https://help.sap.com/doc/abapdocu_751_index_htm/7.51/en-us/abenddic_cds_cycle_problems.htm)
+Inspired by: [ABAP CDS - Cyclical Dependencies](https://help.sap.com/doc/abapdocu_latest_index_htm/latest/en-US/index.htm?file=abencds_cycle_problems.htm)
 
 The example in the link above contains 3 CDS views which depend on each other by association. This is not a problem, because abapGit can pull and activate them. However one of the CDS view was altered so that there is a cyclic dependency which is not discovered by syntax checker. Everything is activated in the original system, but it cannot be pulled, nor activated in the target system using abapGit. 
 
